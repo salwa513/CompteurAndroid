@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.compteurandroid.app-mergeDebugResources-29:/values-port/values-port.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\user\\.gradle\\caches\\9.6.0\\transforms\\98b708ffb2cbeacd7634b710e24026f3\\transformed\\appcompat-1.7.0\\res\\values-port\\values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        }
+    ]
+}

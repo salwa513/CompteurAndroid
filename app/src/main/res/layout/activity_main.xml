@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+    <!-- Titre -->
+    <TextView
+        android:id="@+id/textViewTitre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titre_compteur"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Valeur du compteur -->
+    <TextView
+        android:id="@+id/textViewCompteur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/valeur_initiale"
+        android:textSize="72sp"
+        android:textStyle="bold"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitre" />
+
+    <!-- Bouton - -->
+    <Button
+        android:id="@+id/buttonDecrementer"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text="@string/bouton_decrementer"
+        android:textSize="28sp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toStartOf="@id/buttonIncrementer"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewCompteur" />
+
+    <!-- Bouton + -->
+    <Button
+        android:id="@+id/buttonIncrementer"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text="@string/bouton_incrementer"
+        android:textSize="28sp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/buttonDecrementer"
+        app:layout_constraintTop_toBottomOf="@id/textViewCompteur" />
+
+    <!-- Bouton Réinitialiser -->
+    <Button
+        android:id="@+id/buttonReinitialiser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bouton_reinitialiser"
+        android:textSize="18sp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonIncrementer" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

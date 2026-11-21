@@ -1,0 +1,14 @@
+com.example.compteurandroid
+id buttonDecrementer
+id buttonIncrementer
+id buttonReinitialiser
+id textViewCompteur
+id textViewTitre
+layout activity_main
+string app_name
+string bouton_decrementer
+string bouton_incrementer
+string bouton_reinitialiser
+string message_reinitialisation
+string titre_compteur
+string valeur_initiale
